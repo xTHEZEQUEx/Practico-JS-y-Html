@@ -9,10 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./logos/favicon_yard_sale.svg" type="image/x-icon">
 </head>
 <body>
   <nav>
+    <!-- Menú hamburguesa -->
     <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <!-- Menu desktop entero izquierda -->
     <div class="navbar-left">
       <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
       <ul>
@@ -36,6 +39,7 @@
         </li>
       </ul>
     </div>
+    <!-- Menu desktop entero derecha -->
     <div class="navbar-right">
       <ul>
         <li class="navbar-email">platzi@example.com</li>
@@ -45,6 +49,7 @@
         </li>
       </ul>
     </div>
+    <!-- Menú desplegable con el email -->
     <div class="desktop-menu inactive">
         <ul>
           <li>
@@ -60,6 +65,7 @@
           </li>
         </ul>
       </div>
+    <!-- Menú mobile -->
       <div class="mobile-menu inactive">
         <ul>
           <li>
@@ -104,6 +110,7 @@
         </ul>
       </div>
   </nav>
+  <!-- Ordenes  -->
   <aside class="product-detail inactive">
     <div class="title-container">
       <img src="./icons/flechita.svg" alt="arrow">
@@ -146,20 +153,25 @@
     </div>
   </div>
   </aside>
+  <!-- Detalles Productos -->
+  <aside class="details-product inactive">
+    <div class="product-detail-close">
+      <img src="./icons/icon_close.png" alt="close">
+    </div>
+    <img src="https://i.pinimg.com/564x/90/e2/61/90e261b6764a0a7c003bd61ec843a62c.jpg" alt="bike">
+    <div class="info-product">
+      <p>$35,00</p>
+      <p>Bike</p>
+      <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+      <button class="primary-button add-to-cart-button">
+        <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
+        Add to cart
+      </button>
+    </div>
+  </aside>
+  <!-- Objetos productos -->
   <section class="main-container">
     <div class="cards-container">
-      <!-- <div class="product-card">
-        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-        <div class="product-info">
-          <div>
-            <p>$120,00</p>
-            <p>Bike</p>
-          </div>
-          <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="">
-          </figure>
-        </div>
-      </div> -->
     </div>
   </section>
   <script src="index1.js"></script>
