@@ -7,11 +7,19 @@ const asideOrder = document.querySelector('.product-detail')
 const cardsContainer = document.querySelector('.cards-container')
 const productDetails = document.querySelector('.details-product')
 const imgProductDetailClose = document.querySelector('.product-detail-close')
+const imgArrow = document.querySelector('.imageArrow')
+const deleteDetail = document.querySelector('.deleteProduct')
+const orderContent  = document.querySelector('.my-order-content')
+const shoppingCart = document.querySelector('.shopping-cart')
+const addToCart = document.querySelector('.add-to-cart-button')
 
 navEmail.addEventListener('click', toggleMenu)
 hamburguerMenu.addEventListener('click', toggleMobile)
 menuShoppingCart.addEventListener('click', toggleShoppingCart)
 imgProductDetailClose.addEventListener('click', closeProductDetails)
+imgArrow.addEventListener('click', closeMyOrder)
+deleteDetail.addEventListener('click', deleteProduct)
+
 
 function toggleMenu() {
     const isAsideClosed = asideOrder.classList.contains('inactive')
@@ -58,6 +66,18 @@ function showProductDetails() {
 
 function closeProductDetails() {
     productDetails.classList.add('inactive')
+}
+function closeMyOrder() {
+    const isAsideClosed = asideOrder.classList.contains('inactive')
+    if(!isAsideClosed) {
+        asideOrder.classList.add('inactive')
+    }
+}
+function deleteProduct() {
+    const imageDelete = shoppingCart.classList.contains('inactive')
+    if(!imageDelete) {
+        shoppingCart.classList.add('inactive')
+    }
 }
 
 const productList = []
@@ -182,3 +202,4 @@ function addProducts(arrayProducts) {
 }
 addProducts(productList);
 
+const fullOrder = [] //Este array es para la cantidad de la orden y pasar al checkout 
